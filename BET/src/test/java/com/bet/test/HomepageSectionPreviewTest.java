@@ -45,8 +45,8 @@ public class HomepageSectionPreviewTest
 	private void endReports()
 	{
 		
-		extent.flush();
-		extent.close();
+		//extent.flush();
+		//extent.close();
 		
 	}
 	
