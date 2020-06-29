@@ -79,7 +79,7 @@ public class HomepageSectionPreviewTest
 	@Test(priority=2)
 	private void Music_Preview()
 	{
-		extent.startTest("Hello");
+		//extent.startTest("Hello");
 		element=HomePageObjects.home_Music(driver);
 		Operations.mouseOver(driver, element);
 		try {
@@ -191,7 +191,7 @@ public class HomepageSectionPreviewTest
 			
 		}*/
 		
-		extent.endTest(extentTest);
+		//extent.endTest(extentTest);
 		driver.quit();
 
 	}
