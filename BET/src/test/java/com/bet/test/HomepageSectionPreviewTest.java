@@ -95,7 +95,7 @@ public class HomepageSectionPreviewTest
 	@Test(priority=3)
 	private void Videos_Preview()
 	{
-		extent.startTest("Hello");
+		extent.startTest("Videos_Preview");
 		element=HomePageObjects.home_Videos(driver);
 		Operations.mouseOver(driver, element);
 		try {
@@ -106,7 +106,7 @@ public class HomepageSectionPreviewTest
 		}
 		
 		 
-		extent.endTest(extentTest);
+	
 		
 	}
 	
@@ -192,7 +192,7 @@ public class HomepageSectionPreviewTest
 			
 		}*/
 		
-		
+		//extent.endTest(extentTest);	
 		driver.quit();
 
 	}
