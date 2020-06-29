@@ -1,0 +1,792 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>60/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 08 12:01:27 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>1033 seconds (1033734 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.BetPlus_Preview()'><b>BetPlus_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest<br/>
+<a href="#Output-2590084" onClick='toggleBox("Output-2590084", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2590084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2590084">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\BetPlus_Preview.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.Celebs_Preview()'><b>Celebs_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest<br/>
+<a href="#Output-25334228" onClick='toggleBox("Output-25334228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25334228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25334228">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Celebs_Preview.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.Music_Preview()'><b>Music_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest<br/>
+<a href="#Output-10802071" onClick='toggleBox("Output-10802071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10802071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10802071">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Music_Preview.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.News_Preview()'><b>News_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest<br/>
+<a href="#Output-20891019" onClick='toggleBox("Output-20891019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20891019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20891019">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\News_Preview.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.BetPlusTest.StreamExclusiveOriginals()'><b>StreamExclusiveOriginals</b><br>Test class: com.bet.test.BetPlusTest<br/>
+<a href="#Output-13134757" onClick='toggleBox("Output-13134757", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13134757" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13134757">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\twitter.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.bet.test.BetPlusTest@d64342</td></tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.Style_Preview()'><b>Style_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest<br/>
+<a href="#Output-31173069" onClick='toggleBox("Output-31173069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31173069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31173069">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Style_Preview.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.Videos_Preview()'><b>Videos_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest<br/>
+<a href="#Output-12295546" onClick='toggleBox("Output-12295546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12295546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12295546">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Videos_Preview.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.BetPlusTest.bet_GotoBetPlusButton()'><b>bet_GotoBetPlusButton</b><br>Test class: com.bet.test.BetPlusTest<br/>
+<a href="#Output-1202899" onClick='toggleBox("Output-1202899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1202899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1202899">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\twitter.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.bet.test.BetPlusTest@d64342</td></tr>
+<tr>
+<td title='com.bet.test.CelebsTest.celebs_AllCelebs()'><b>celebs_AllCelebs</b><br>Test class: com.bet.test.CelebsTest<br/>
+<a href="#Output-6415476" onClick='toggleBox("Output-6415476", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6415476" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6415476">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Latest Black Celebrity News, Gossip and More  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.CelebsTest@13afe78</td></tr>
+<tr>
+<td title='com.bet.test.CelebsTest.celebs_Exclusives()'><b>celebs_Exclusives</b><br>Test class: com.bet.test.CelebsTest<br/>
+<a href="#Output-2526956" onClick='toggleBox("Output-2526956", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2526956" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2526956">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Celebrity Exclusives.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.CelebsTest@13afe78</td></tr>
+<tr>
+<td title='com.bet.test.CelebsTest.celebs_Movies()'><b>celebs_Movies</b><br>Test class: com.bet.test.CelebsTest<br/>
+<a href="#Output-31184612" onClick='toggleBox("Output-31184612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31184612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31184612">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Original Movies Season 18  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.CelebsTest@13afe78</td></tr>
+<tr>
+<td title='com.bet.test.CelebsTest.celebs_News()'><b>celebs_News</b><br>Test class: com.bet.test.CelebsTest<br/>
+<a href="#Output-32923205" onClick='toggleBox("Output-32923205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32923205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32923205">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Latest Black Celebrity News, Gossip and More  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.CelebsTest@13afe78</td></tr>
+<tr>
+<td title='com.bet.test.CelebsTest.celebs_TvShows()'><b>celebs_TvShows</b><br>Test class: com.bet.test.CelebsTest<br/>
+<a href="#Output-15990832" onClick='toggleBox("Output-15990832", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15990832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15990832">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Watch Full Episodes Of Your Favorite BET Shows  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.CelebsTest@13afe78</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.celebs_style_AllStyle()'><b>celebs_style_AllStyle</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-10559673" onClick='toggleBox("Output-10559673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10559673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10559673">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Style.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.Covid19ReliefFundTest.covid19ReliefFund()'><b>covid19ReliefFund</b><br>Test class: com.bet.test.Covid19ReliefFundTest<br/>
+<a href="#Output-19517906" onClick='toggleBox("Output-19517906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19517906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19517906">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\BET COVID-19 Donate.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.bet.test.Covid19ReliefFundTest@1684286</td></tr>
+<tr>
+<td title='com.bet.test.SearchBarTest.emptyStringTest()'><b>emptyStringTest</b><br>Test class: com.bet.test.SearchBarTest<br/>
+<a href="#Output-7478290" onClick='toggleBox("Output-7478290", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7478290" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7478290">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Celebrities, Music, News, Entertainment, TV Shows & Videos  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.bet.test.SearchBarTest@1ba5a14</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.homePage()'><b>homePage</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-2795587" onClick='toggleBox("Output-2795587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2795587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2795587">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Celebrities, Music, News, Entertainment, TV Shows & Videos  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_BetPlus()'><b>home_BetPlus</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-9882372" onClick='toggleBox("Output-9882372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9882372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9882372">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\twitter.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_Celebs()'><b>home_Celebs</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-21423956" onClick='toggleBox("Output-21423956", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21423956" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21423956">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Latest Black Celebrity News, Gossip and More  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_LiveTV()'><b>home_LiveTV</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-13448288" onClick='toggleBox("Output-13448288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13448288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13448288">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\BET Networks Live TV.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_Music()'><b>home_Music</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-1484810" onClick='toggleBox("Output-1484810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1484810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1484810">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Music  Latest News & Updates  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_News()'><b>home_News</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-27815096" onClick='toggleBox("Output-27815096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27815096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27815096">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Breaking Entertainment News  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_Shows()'><b>home_Shows</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-14377393" onClick='toggleBox("Output-14377393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14377393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14377393">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Celebrities, Music, News, Entertainment, TV Shows & Videos  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_Style()'><b>home_Style</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-3393218" onClick='toggleBox("Output-3393218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3393218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3393218">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Style.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.HomepageTest.home_Videos()'><b>home_Videos</b><br>Test class: com.bet.test.HomepageTest<br/>
+<a href="#Output-9142760" onClick='toggleBox("Output-9142760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9142760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9142760">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Video.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageTest@16eb2ec</td></tr>
+<tr>
+<td title='com.bet.test.SearchBarTest.invalidInputTest()'><b>invalidInputTest</b><br>Test class: com.bet.test.SearchBarTest<br/>
+<a href="#Output-28569218" onClick='toggleBox("Output-28569218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28569218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28569218">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Khjas.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.bet.test.SearchBarTest@1ba5a14</td></tr>
+<tr>
+<td title='com.bet.test.MusicTest.music_106PARKMICCHECK()'><b>music_106PARKMICCHECK</b><br>Test class: com.bet.test.MusicTest<br/>
+<a href="#Output-26687576" onClick='toggleBox("Output-26687576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26687576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26687576">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\106 & PARK MIC CHECK  Mic Check  BET  106 & Park  Music  Music News.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.MusicTest@79be86</td></tr>
+<tr>
+<td title='com.bet.test.MusicTest.music_AllMusic()'><b>music_AllMusic</b><br>Test class: com.bet.test.MusicTest<br/>
+<a href="#Output-19965262" onClick='toggleBox("Output-19965262", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19965262" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19965262">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Music  Latest News & Updates  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.MusicTest@79be86</td></tr>
+<tr>
+<td title='com.bet.test.MusicTest.music_Amplified()'><b>music_Amplified</b><br>Test class: com.bet.test.MusicTest<br/>
+<a href="#Output-23553202" onClick='toggleBox("Output-23553202", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23553202" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23553202">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Amplified.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.MusicTest@79be86</td></tr>
+<tr>
+<td title='com.bet.test.MusicTest.music_MusicNews()'><b>music_MusicNews</b><br>Test class: com.bet.test.MusicTest<br/>
+<a href="#Output-27676334" onClick='toggleBox("Output-27676334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27676334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27676334">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Music  Latest News & Updates  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.MusicTest@79be86</td></tr>
+<tr>
+<td title='com.bet.test.MusicTest.music_RateTheBars()'><b>music_RateTheBars</b><br>Test class: com.bet.test.MusicTest<br/>
+<a href="#Output-13072869" onClick='toggleBox("Output-13072869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13072869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13072869">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Rate The Bars  Episodes, Videos, Highlights & More  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.MusicTest@79be86</td></tr>
+<tr>
+<td title='com.bet.test.VideosTest.music_videos_TheGlamGapSeries()'><b>music_videos_TheGlamGapSeries</b><br>Test class: com.bet.test.VideosTest<br/>
+<a href="#Output-7677252" onClick='toggleBox("Output-7677252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7677252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7677252">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Glam Gap.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.VideosTest@ce8af7</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_AllNews()'><b>news_AllNews</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-7246473" onClick='toggleBox("Output-7246473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7246473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7246473">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Breaking Entertainment News  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_Coronavirus()'><b>news_Coronavirus</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-29323065" onClick='toggleBox("Output-29323065", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29323065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29323065">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Coronavirus.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_ExclusiveInterviews()'><b>news_ExclusiveInterviews</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-6131994" onClick='toggleBox("Output-6131994", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6131994" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6131994">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\BET News Special Extras & Exclusives.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_National()'><b>news_National</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-18133238" onClick='toggleBox("Output-18133238", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18133238" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18133238">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Latest National News & Stories  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_ReclaimYourVote()'><b>news_ReclaimYourVote</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-689604" onClick='toggleBox("Output-689604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689604">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Reclaim Your Vote  BET  2020 Election  Vote  ReclaimYourVote  RECLAIM YOUR VOTE.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_Sports()'><b>news_Sports</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-25483708" onClick='toggleBox("Output-25483708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25483708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25483708">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Sports News & Stories  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.NewsTest.news_Videos()'><b>news_Videos</b><br>Test class: com.bet.test.NewsTest<br/>
+<a href="#Output-19030235" onClick='toggleBox("Output-19030235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19030235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19030235">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Video News  Video  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.NewsTest@80ec60</td></tr>
+<tr>
+<td title='com.bet.test.SearchBarTest.searchPageDisplay()'><b>searchPageDisplay</b><br>Test class: com.bet.test.SearchBarTest<br/>
+<a href="#Output-25309132" onClick='toggleBox("Output-25309132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25309132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25309132">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Search Results.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.SearchBarTest@1ba5a14</td></tr>
+<tr>
+<td title='com.bet.test.SearchBarTest.searchResultDisplay()'><b>searchResultDisplay</b><br>Test class: com.bet.test.SearchBarTest<br/>
+<a href="#Output-22652365" onClick='toggleBox("Output-22652365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22652365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22652365">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Snoop Dogg.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.SearchBarTest@1ba5a14</td></tr>
+<tr>
+<td title='com.bet.test.SearchBarTest.searchUsingEnterKeyTest()'><b>searchUsingEnterKeyTest</b><br>Test class: com.bet.test.SearchBarTest<br/>
+<a href="#Output-33523728" onClick='toggleBox("Output-33523728", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33523728" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33523728">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\invalid.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.bet.test.SearchBarTest@1ba5a14</td></tr>
+<tr>
+<td title='com.bet.test.SearchBarTest.searchUsingSuggestion()'><b>searchUsingSuggestion</b><br>Test class: com.bet.test.SearchBarTest<br/>
+<a href="#Output-31354629" onClick='toggleBox("Output-31354629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31354629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31354629">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Search Results.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.SearchBarTest@1ba5a14</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_AllShows()'><b>shows_AllShows</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-30635081" onClick='toggleBox("Output-30635081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30635081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30635081">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Watch Full Episodes Of Your Favorite BET Shows  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_AmericanSoul()'><b>shows_AmericanSoul</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-4128715" onClick='toggleBox("Output-4128715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4128715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4128715">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\American Soul  BET  Season 1 Full Episodes, Exclusive Videos, Photos And More .png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_BetAwards()'><b>shows_BetAwards</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-19430296" onClick='toggleBox("Output-19430296", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19430296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19430296">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\2019 BET Awards  Meek Mill, Fantasia and More Added to the BET Awards.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_FullEpisodes()'><b>shows_FullEpisodes</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-5275750" onClick='toggleBox("Output-5275750", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5275750" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5275750">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Unlocked Episodes  Episodes  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.HomepageSectionPreviewTest.shows_Preview()'><b>shows_Preview</b><br>Test class: com.bet.test.HomepageSectionPreviewTest</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.HomepageSectionPreviewTest@643faf</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_SOS()'><b>shows_SOS</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-24055929" onClick='toggleBox("Output-24055929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24055929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24055929">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Saving Our Selves A BET COVID-19 Relief Effort Special  BET News Special  BET  Coronavirus  Covid-19.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_TvSchedule()'><b>shows_TvSchedule</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-29164671" onClick='toggleBox("Output-29164671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29164671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29164671">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\BET TV Schedule  Shows List  BET.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.ShowsTest.shows_TylerPerry()'><b>shows_TylerPerry</b><br>Test class: com.bet.test.ShowsTest<br/>
+<a href="#Output-8197402" onClick='toggleBox("Output-8197402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8197402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8197402">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Tyler Perrys The Oval  BET  Tyler Perry  Tyler Perrys The Oval  The Oval.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.ShowsTest@8dacdf</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.style_Beauty()'><b>style_Beauty</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-15400986" onClick='toggleBox("Output-15400986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15400986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15400986">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Beauty.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.style_ExclusiveInterviews()'><b>style_ExclusiveInterviews</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-28429944" onClick='toggleBox("Output-28429944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28429944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28429944">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Mahisha Dellinger.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.style_Fashion()'><b>style_Fashion</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-12572413" onClick='toggleBox("Output-12572413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12572413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12572413">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Fashion.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.style_Lifestyle()'><b>style_Lifestyle</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-9046" onClick='toggleBox("Output-9046", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9046" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9046">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Living.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.style_TheGlamGapSeries()'><b>style_TheGlamGapSeries</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-9126317" onClick='toggleBox("Output-9126317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9126317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9126317">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Glam Gap.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.StyleTest.style_Videos()'><b>style_Videos</b><br>Test class: com.bet.test.StyleTest<br/>
+<a href="#Output-31939859" onClick='toggleBox("Output-31939859", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31939859" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31939859">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Videos.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.StyleTest@163425a</td></tr>
+<tr>
+<td title='com.bet.test.VideosTest.videos_106PARKMICCHECK()'><b>videos_106PARKMICCHECK</b><br>Test class: com.bet.test.VideosTest<br/>
+<a href="#Output-16539313" onClick='toggleBox("Output-16539313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16539313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16539313">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\106 & PARK MIC CHECK  Mic Check  BET  106 & Park  Music  Music News.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.VideosTest@ce8af7</td></tr>
+<tr>
+<td title='com.bet.test.VideosTest.videos_AllVideos()'><b>videos_AllVideos</b><br>Test class: com.bet.test.VideosTest<br/>
+<a href="#Output-14584940" onClick='toggleBox("Output-14584940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14584940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14584940">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\Video.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.VideosTest@ce8af7</td></tr>
+<tr>
+<td title='com.bet.test.VideosTest.videos_BetBuzz()'><b>videos_BetBuzz</b><br>Test class: com.bet.test.VideosTest<br/>
+<a href="#Output-24076744" onClick='toggleBox("Output-24076744", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24076744" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24076744">
+<br> <img src='C:\Users\computer\workspace\BET\screenshots\BET BUZZ.png' height='400' width='400'<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bet.test.VideosTest@ce8af7</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="18098" started-at="2020-06-28T04:14:33Z" finished-at="2020-06-28T04:14:51Z">
+    <groups>
+    </groups>
+    <test name="Test2" duration-ms="18098" started-at="2020-06-28T04:14:33Z" finished-at="2020-06-28T04:14:51Z">
+      <class name="com.bet.test.HomepageSectionPreviewTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab]" name="setup" is-config="true" duration-ms="14175" started-at="2020-06-28T09:44:33Z" finished-at="2020-06-28T09:44:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Music_Preview()[pri:2, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab]" name="Music_Preview" duration-ms="2797" started-at="2020-06-28T09:44:47Z" finished-at="2020-06-28T09:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Music_Preview -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab]" name="quit" is-config="true" duration-ms="1097" started-at="2020-06-28T09:44:50Z" finished-at="2020-06-28T09:44:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Music_Preview status=SUCCESS method=HomepageSectionPreviewTest.Music_Preview()[pri:2, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bet.test.HomepageSectionPreviewTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

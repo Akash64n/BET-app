@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BET_Test Automation Suite]">
+  <listeners>
+    <listener class-name="com.qa.extentreportlistener.ExtentReporterNG"/>
+  </listeners>
+  <test name="BET functionality test">
+    <classes>
+      <class name="com.bet.test.HomepageTest"/>
+      <class name="com.bet.test.HomepageSectionPreviewTest"/>
+      <class name="com.bet.test.ShowsTest"/>
+      <class name="com.bet.test.MusicTest"/>
+      <class name="com.bet.test.VideosTest"/>
+      <class name="com.bet.test.NewsTest"/>
+      <class name="com.bet.test.CelebsTest"/>
+      <class name="com.bet.test.StyleTest"/>
+      <class name="com.bet.test.BetPlusTest"/>
+      <class name="com.bet.test.SearchBarTest"/>
+      <class name="com.bet.test.Covid19ReliefFundTest"/>
+    </classes>
+  </test> <!-- BET functionality test -->
+</suite> <!-- Failed suite [BET_Test Automation Suite] -->

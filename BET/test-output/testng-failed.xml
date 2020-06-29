@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://bet.com"/>
+  <listeners>
+    <listener class-name="util.ExtentReporter"/>
+  </listeners>
+  <test name="Test2">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://bet.com"/>
+    <classes>
+      <class name="com.bet.test.HomepageSectionPreviewTest">
+        <methods>
+          <include name="Music_Preview"/>
+        </methods>
+      </class> <!-- com.bet.test.HomepageSectionPreviewTest -->
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Failed suite [Suite] -->

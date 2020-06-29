@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.bet.test.ShowsTest">
+        <methods>
+          <include name="quit"/>
+          <include name="shows_AmericanSoul"/>
+          <include name="shows_FullEpisodes"/>
+          <include name="shows_TvSchedule"/>
+          <include name="setup"/>
+          <include name="shows_AllShows"/>
+          <include name="shows_QueenCollective"/>
+          <include name="shows_BetAwards"/>
+          <include name="shows_TheOval"/>
+        </methods>
+      </class> <!-- com.bet.test.ShowsTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
