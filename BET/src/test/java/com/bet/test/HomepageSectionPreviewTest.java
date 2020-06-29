@@ -106,7 +106,7 @@ public class HomepageSectionPreviewTest
 		}
 		
 		 
-		
+		extent.endTest(extentTest);
 		
 	}
 	
@@ -192,7 +192,7 @@ public class HomepageSectionPreviewTest
 			
 		}*/
 		
-		//extent.endTest(extentTest);
+		
 		driver.quit();
 
 	}
