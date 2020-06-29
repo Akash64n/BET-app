@@ -33,10 +33,10 @@ public class HomepageSectionPreviewTest
 	@BeforeTest
 	private void setExtent()
 	{
-//		extent=new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html",true);
-//		extent.addSystemInfo("Host Name","Akash PC");
-//		extent.addSystemInfo("User Name","Akash Negi");
-//		extent.addSystemInfo("Environment","QA");
+		extent=new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html",true);
+		extent.addSystemInfo("Host Name","Akash PC");
+		extent.addSystemInfo("User Name","Akash Negi");
+		extent.addSystemInfo("Environment","QA");
 		
 		
 	}
@@ -45,8 +45,8 @@ public class HomepageSectionPreviewTest
 	private void endReports()
 	{
 		
-		//extent.flush();
-		//extent.close();
+		extent.flush();
+		extent.close();
 		
 	}
 	
@@ -79,7 +79,7 @@ public class HomepageSectionPreviewTest
 	@Test(priority=2)
 	private void Music_Preview()
 	{
-		//extent.startTest("Hello");
+		extent.startTest("Hello");
 		element=HomePageObjects.home_Music(driver);
 		Operations.mouseOver(driver, element);
 		try {
@@ -191,7 +191,7 @@ public class HomepageSectionPreviewTest
 			
 		}*/
 		
-		//extent.endTest(extentTest);
+		extent.endTest(extentTest);
 		driver.quit();
 
 	}
