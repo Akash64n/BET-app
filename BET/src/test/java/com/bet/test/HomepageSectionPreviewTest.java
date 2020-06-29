@@ -192,7 +192,7 @@ public class HomepageSectionPreviewTest
 			
 		}*/
 		
-		extent.endTest(extentTest);
+		//extent.endTest(extentTest);
 		driver.quit();
 
 	}
