@@ -35,7 +35,7 @@
 		<classes>
 			<class name="com.bet.test.HomepageSectionPreviewTest">
 				<methods>
-					<include name="Videos_Preview" />
+					<include name="News_Preview" />
 				</methods>
 			</class>
 		</classes>
