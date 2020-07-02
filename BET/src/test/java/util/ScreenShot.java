@@ -14,15 +14,15 @@ import org.testng.Reporter;
 public class ScreenShot 
 {
 	
-	public String getScreenShot(WebDriver driver,String testName)
+	public static String getScreenShot(WebDriver driver,String testName)
 	{
 		
-		String dateName=new SimpleDateFormat("").format(new Date());
+		String dateName=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		
 		TakesScreenshot screen=(TakesScreenshot)driver;
 		File src= screen.getScreenshotAs(OutputType.FILE);
 		
-		File screenShotName=new File(".//screenshots//"+testName+".png");
+		File screenShotName=new File(".//screenshots//"+testName+dateName+".png");
 
 		try {
 			FileHandler.copy(src,screenShotName);
@@ -32,7 +32,9 @@ public class ScreenShot
 			e.printStackTrace();
 		}
 		
-    return testName;
+		String path=System.getProperty("user.dir")+ "/screenshots/"+testName+dateName+".png";
+		
+    return path;
 	 
     }
 	

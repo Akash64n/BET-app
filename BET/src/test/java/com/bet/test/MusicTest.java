@@ -3,7 +3,9 @@ package com.bet.test;
 
 
 import com.bet.pagemodels.*;
-
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import util.KeyWords;
 import util.ScreenShot;
@@ -14,7 +16,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -23,6 +27,29 @@ public class MusicTest
 	WebDriver driver=null;
 	WebElement element=null;
 	ScreenShot shot=null;
+	ExtentReports extent;
+	ExtentTest extentTest;
+	
+	
+	@BeforeTest(alwaysRun=true)
+	private void setExtent()
+	{
+		extent=new ExtentReports(System.getProperty("user.dir")+"/Reports/ExtentReport.html",true);
+		extent.addSystemInfo("Host Name","Akash PC");
+		extent.addSystemInfo("User Name","Akash Negi");
+		extent.addSystemInfo("Environment","QA");
+
+
+	}
+	
+	@AfterTest(alwaysRun=true)
+	private void closeExtent()
+	{
+		extent.flush();
+		extent.close();
+
+
+	}
 
 	@Parameters({ "browser", "url" })
 	@BeforeMethod(alwaysRun=true)
@@ -99,9 +126,25 @@ public class MusicTest
 	{
 		if(ITestResult.FAILURE==result.getStatus())
 		{
-			shot=new ScreenShot(); 
-			shot.getScreenShot(driver, result.getName());
+			extentTest.log(LogStatus.FAIL,"Test Case FAILED is "+result.getName());
+			extentTest.log(LogStatus.FAIL,"Test Case FAILED due to "+result.getThrowable());
+			
+			String path=ScreenShot.getScreenShot(driver,result.getName());
+			extentTest.log(LogStatus.FAIL,extentTest.addScreenCapture(path));
+			
 		}
+		else if(ITestResult.SKIP==result.getStatus())
+		{
+			extentTest.log(LogStatus.SKIP,"Test Case SKIPPED is"+result.getName());
+		}
+
+		else if(ITestResult.SUCCESS==result.getStatus())
+		{
+			extentTest.log(LogStatus.PASS,"Test Case PASSED is "+result.getName());
+
+
+		}		
+		extent.endTest(extentTest);
 		
 		driver.quit();
 
