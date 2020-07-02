@@ -138,7 +138,7 @@ public class HomepageTest
 		Operations.click(driver, element);
 		Thread.sleep(1000);
 		String title=driver.getTitle();
-		Assert.assertEquals("Latest Black Celebrity News, Gossip and More | BET", title);
+		Assert.assertEquals("Latest Black Celebrity News, Gossip and More | BETA", title);
 		
 		
 	}
