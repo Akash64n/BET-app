@@ -33,7 +33,7 @@ public class HomepageSectionPreviewTest
 	@BeforeTest
 	private void setExtent()
 	{
-		extent=new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html",true);
+		extent=new ExtentReports(System.getProperty("user.dir")+"/Reports/ExtentReport.html",true);
 		extent.addSystemInfo("Host Name","Akash PC");
 		extent.addSystemInfo("User Name","Akash Negi");
 		extent.addSystemInfo("Environment","QA");
