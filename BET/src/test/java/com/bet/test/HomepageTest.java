@@ -192,6 +192,7 @@ public class HomepageTest
 			extentTest.log(LogStatus.FAIL,"Test Case FAILED due to "+result.getThrowable());
 			
 			String path=ScreenShot.getScreenShot(driver,result.getName());
+		
 			extentTest.log(LogStatus.FAIL,extentTest.addScreenCapture(path));
 			
 		}
