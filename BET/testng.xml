@@ -17,7 +17,7 @@
 			<class name="com.bet.test.HomepageTest">
 
 				<methods>
-					<include name="home_Shows" />
+					<include name="home_Music" />
 				</methods>
 			</class>
 		</classes>
