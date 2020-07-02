@@ -6,7 +6,7 @@
 		<listener class-name="util.ExtentReporter" />
 	</listeners>
 
-<!--  
+  
 	<test name="Test1">
 
 
@@ -23,7 +23,7 @@
 		</classes>
 	</test>
 	
-	-->
+	<!--
 
 
 
@@ -41,7 +41,7 @@
 		</classes>
 	</test>
 
-<!--  
+
 
 	<test name="Test3">
 	
