@@ -86,7 +86,7 @@ public class HomepageTest
 		Operations.click(driver, element);
 		Thread.sleep(1000);
 		String title=driver.getTitle();
-		Assert.assertEquals("Celebrities, Music, News, Entertainment, TV Shows & Videos | BETA", title);
+		Assert.assertEquals("", title);
 		
 		
 	}
@@ -99,7 +99,7 @@ public class HomepageTest
 		Operations.click(driver, element);
 		Thread.sleep(1000);
 		String title=driver.getTitle();
-		Assert.assertEquals("Music | Latest News & Updates | BET", title);
+		Assert.assertEquals("Music | Latest News & Updates | BETA", title);
 		
 		
 	}
