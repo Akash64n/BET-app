@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="url" value="https://bet.com"/>
   <listeners>
     <listener class-name="util.ExtentReporter"/>
   </listeners>
-  <test name="Test2">
+  <test name="Test1(failed)">
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://bet.com"/>
     <classes>
-      <class name="com.bet.test.HomepageSectionPreviewTest">
+      <class name="com.bet.test.HomepageTest">
         <methods>
-          <include name="Music_Preview"/>
+          <include name="closeExtent"/>
+          <include name="setup"/>
+          <include name="quit"/>
+          <include name="setExtent"/>
+          <include name="home_Music"/>
         </methods>
-      </class> <!-- com.bet.test.HomepageSectionPreviewTest -->
+      </class> <!-- com.bet.test.HomepageTest -->
     </classes>
-  </test> <!-- Test2 -->
+  </test> <!-- Test1(failed) -->
+  <test name="Test3(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://bet.com"/>
+    <classes>
+      <class name="com.bet.test.ShowsTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="shows_BetAwards"/>
+          <include name="closeExtent"/>
+        </methods>
+      </class> <!-- com.bet.test.ShowsTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

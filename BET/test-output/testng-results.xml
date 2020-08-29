@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="49" total="60" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18098" started-at="2020-06-28T04:14:33Z" finished-at="2020-06-28T04:14:51Z">
+  <suite name="Suite" duration-ms="286129" started-at="2020-08-29T17:59:01Z" finished-at="2020-08-29T18:03:47Z">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="18098" started-at="2020-06-28T04:14:33Z" finished-at="2020-06-28T04:14:51Z">
-      <class name="com.bet.test.HomepageSectionPreviewTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab]" name="setup" is-config="true" duration-ms="14175" started-at="2020-06-28T09:44:33Z" finished-at="2020-06-28T09:44:47Z">
+    <test name="Test1" duration-ms="22529" started-at="2020-08-29T17:59:01Z" finished-at="2020-08-29T17:59:24Z">
+      <class name="com.bet.test.HomepageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.HomepageTest@be83e4]" name="setExtent" is-config="true" duration-ms="430" started-at="2020-08-29T10:59:01Z" finished-at="2020-08-29T10:59:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.HomepageTest@be83e4]" name="setup" is-config="true" duration-ms="14093" started-at="2020-08-29T10:59:02Z" finished-at="2020-08-29T10:59:16Z">
           <params>
             <param index="0">
               <value>
@@ -23,22 +27,665 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Music_Preview()[pri:2, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab]" name="Music_Preview" duration-ms="2797" started-at="2020-06-28T09:44:47Z" finished-at="2020-06-28T09:44:50Z">
+        <test-method status="FAIL" signature="home_Music()[pri:3, instance:com.bet.test.HomepageTest@be83e4]" name="home_Music" duration-ms="4945" started-at="2020-08-29T10:59:16Z" finished-at="2020-08-29T10:59:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Music | Latest News & Updates | BET] but found [Music | Latest News & Updates | BETA]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Music | Latest News & Updates | BET] but found [Music | Latest News & Updates | BETA]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.bet.test.HomepageTest.home_Music(HomepageTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Music_Preview -->
-        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab]" name="quit" is-config="true" duration-ms="1097" started-at="2020-06-28T09:44:50Z" finished-at="2020-06-28T09:44:51Z">
+        </test-method> <!-- home_Music -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.HomepageTest@be83e4]" name="quit" is-config="true" duration-ms="2360" started-at="2020-08-29T10:59:21Z" finished-at="2020-08-29T10:59:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Music_Preview status=SUCCESS method=HomepageSectionPreviewTest.Music_Preview()[pri:2, instance:com.bet.test.HomepageSectionPreviewTest@163e9ab] output={null}]]]>
+                <![CDATA[[TestResult name=home_Music status=FAILURE method=HomepageTest.home_Music()[pri:3, instance:com.bet.test.HomepageTest@be83e4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.HomepageTest@be83e4]" name="closeExtent" is-config="true" duration-ms="666" started-at="2020-08-29T10:59:23Z" finished-at="2020-08-29T10:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.HomepageTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="14621" started-at="2020-08-29T17:59:24Z" finished-at="2020-08-29T17:59:38Z">
+      <class name="com.bet.test.HomepageSectionPreviewTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@3a8624]" name="setExtent" is-config="true" duration-ms="6" started-at="2020-08-29T10:59:24Z" finished-at="2020-08-29T10:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@3a8624]" name="setup" is-config="true" duration-ms="11219" started-at="2020-08-29T10:59:24Z" finished-at="2020-08-29T10:59:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="News_Preview()[pri:4, instance:com.bet.test.HomepageSectionPreviewTest@3a8624]" name="News_Preview" duration-ms="2303" started-at="2020-08-29T10:59:35Z" finished-at="2020-08-29T10:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- News_Preview -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@3a8624]" name="quit" is-config="true" duration-ms="960" started-at="2020-08-29T10:59:37Z" finished-at="2020-08-29T10:59:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=News_Preview status=SUCCESS method=HomepageSectionPreviewTest.News_Preview()[pri:4, instance:com.bet.test.HomepageSectionPreviewTest@3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="endReports()[pri:0, instance:com.bet.test.HomepageSectionPreviewTest@3a8624]" name="endReports" is-config="true" duration-ms="129" started-at="2020-08-29T10:59:38Z" finished-at="2020-08-29T10:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReports -->
       </class> <!-- com.bet.test.HomepageSectionPreviewTest -->
     </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="33369" started-at="2020-08-29T17:59:38Z" finished-at="2020-08-29T18:00:12Z">
+      <class name="com.bet.test.ShowsTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.ShowsTest@14b1c02]" name="setExtent" is-config="true" duration-ms="10" started-at="2020-08-29T10:59:38Z" finished-at="2020-08-29T10:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.ShowsTest@14b1c02]" name="setup" is-config="true" duration-ms="11055" started-at="2020-08-29T10:59:38Z" finished-at="2020-08-29T10:59:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="shows_BetAwards()[pri:1, instance:com.bet.test.ShowsTest@14b1c02]" name="shows_BetAwards" duration-ms="20326" started-at="2020-08-29T10:59:49Z" finished-at="2020-08-29T11:00:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='BET AWARDS 2019']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AKASH-PC', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, goog:chromeOptions: {debuggerAddress: localhost:56723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8b72ff491b201107e87d7036fa866b7f
+*** Element info: {Using=xpath, value=//a[text()='BET AWARDS 2019']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='BET AWARDS 2019']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AKASH-PC', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, goog:chromeOptions: {debuggerAddress: localhost:56723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8b72ff491b201107e87d7036fa866b7f
+*** Element info: {Using=xpath, value=//a[text()='BET AWARDS 2019']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.bet.pagemodels.ShowsPageModel.shows_BetAwards(ShowsPageModel.java:14)
+	at com.bet.test.ShowsTest.shows_BetAwards(ShowsTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shows_BetAwards -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.ShowsTest@14b1c02]" name="quit" is-config="true" duration-ms="1851" started-at="2020-08-29T11:00:10Z" finished-at="2020-08-29T11:00:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shows_BetAwards status=FAILURE method=ShowsTest.shows_BetAwards()[pri:1, instance:com.bet.test.ShowsTest@14b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.ShowsTest@14b1c02]" name="closeExtent" is-config="true" duration-ms="122" started-at="2020-08-29T11:00:11Z" finished-at="2020-08-29T11:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.ShowsTest -->
+    </test> <!-- Test3 -->
+    <test name="Test4" duration-ms="15708" started-at="2020-08-29T18:00:12Z" finished-at="2020-08-29T18:00:27Z">
+      <class name="com.bet.test.MusicTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.MusicTest@1baeedf]" name="setExtent" is-config="true" duration-ms="6" started-at="2020-08-29T11:00:12Z" finished-at="2020-08-29T11:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.MusicTest@1baeedf]" name="setup" is-config="true" duration-ms="13440" started-at="2020-08-29T11:00:12Z" finished-at="2020-08-29T11:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="music_Amplified()[pri:1, instance:com.bet.test.MusicTest@1baeedf]" name="music_Amplified" duration-ms="1979" started-at="2020-08-29T11:00:25Z" finished-at="2020-08-29T11:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- music_Amplified -->
+        <test-method status="FAIL" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.MusicTest@1baeedf]" name="quit" is-config="true" duration-ms="1" started-at="2020-08-29T11:00:27Z" finished-at="2020-08-29T11:00:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=music_Amplified status=SUCCESS method=MusicTest.music_Amplified()[pri:1, instance:com.bet.test.MusicTest@1baeedf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.bet.test.MusicTest.quit(MusicTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.MusicTest@1baeedf]" name="closeExtent" is-config="true" duration-ms="269" started-at="2020-08-29T11:00:27Z" finished-at="2020-08-29T11:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.MusicTest -->
+    </test> <!-- Test4 -->
+    <test name="Test5" duration-ms="19444" started-at="2020-08-29T18:00:27Z" finished-at="2020-08-29T18:00:47Z">
+      <class name="com.bet.test.VideosTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.VideosTest@4f30ec]" name="setExtent" is-config="true" duration-ms="58" started-at="2020-08-29T11:00:27Z" finished-at="2020-08-29T11:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.VideosTest@4f30ec]" name="setup" is-config="true" duration-ms="13888" started-at="2020-08-29T11:00:27Z" finished-at="2020-08-29T11:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="videos_BetBuzz()[pri:1, instance:com.bet.test.VideosTest@4f30ec]" name="videos_BetBuzz" duration-ms="4386" started-at="2020-08-29T11:00:41Z" finished-at="2020-08-29T11:00:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- videos_BetBuzz -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.VideosTest@4f30ec]" name="quit" is-config="true" duration-ms="1043" started-at="2020-08-29T11:00:46Z" finished-at="2020-08-29T11:00:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=videos_BetBuzz status=SUCCESS method=VideosTest.videos_BetBuzz()[pri:1, instance:com.bet.test.VideosTest@4f30ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.VideosTest@4f30ec]" name="closeExtent" is-config="true" duration-ms="62" started-at="2020-08-29T11:00:47Z" finished-at="2020-08-29T11:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.VideosTest -->
+    </test> <!-- Test5 -->
+    <test name="Test6" duration-ms="20956" started-at="2020-08-29T18:00:47Z" finished-at="2020-08-29T18:01:08Z">
+      <class name="com.bet.test.NewsTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.NewsTest@1deb50e]" name="setExtent" is-config="true" duration-ms="6" started-at="2020-08-29T11:00:47Z" finished-at="2020-08-29T11:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.NewsTest@1deb50e]" name="setup" is-config="true" duration-ms="15836" started-at="2020-08-29T11:00:47Z" finished-at="2020-08-29T11:01:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="news_ReclaimYourVote()[pri:1, instance:com.bet.test.NewsTest@1deb50e]" name="news_ReclaimYourVote" duration-ms="4879" started-at="2020-08-29T11:01:03Z" finished-at="2020-08-29T11:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- news_ReclaimYourVote -->
+        <test-method status="FAIL" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.NewsTest@1deb50e]" name="quit" is-config="true" duration-ms="1" started-at="2020-08-29T11:01:08Z" finished-at="2020-08-29T11:01:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=news_ReclaimYourVote status=SUCCESS method=NewsTest.news_ReclaimYourVote()[pri:1, instance:com.bet.test.NewsTest@1deb50e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.bet.test.NewsTest.quit(NewsTest.java:170)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.NewsTest@1deb50e]" name="closeExtent" is-config="true" duration-ms="222" started-at="2020-08-29T11:01:08Z" finished-at="2020-08-29T11:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.NewsTest -->
+    </test> <!-- Test6 -->
+    <test name="Test7" duration-ms="29193" started-at="2020-08-29T18:01:08Z" finished-at="2020-08-29T18:01:37Z">
+      <class name="com.bet.test.CelebsTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.CelebsTest@1341870]" name="setExtent" is-config="true" duration-ms="99" started-at="2020-08-29T11:01:08Z" finished-at="2020-08-29T11:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.CelebsTest@1341870]" name="setup" is-config="true" duration-ms="20728" started-at="2020-08-29T11:01:08Z" finished-at="2020-08-29T11:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="celebs_News()[pri:1, instance:com.bet.test.CelebsTest@1341870]" name="celebs_News" duration-ms="6984" started-at="2020-08-29T11:01:29Z" finished-at="2020-08-29T11:01:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- celebs_News -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.CelebsTest@1341870]" name="quit" is-config="true" duration-ms="1258" started-at="2020-08-29T11:01:36Z" finished-at="2020-08-29T11:01:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=celebs_News status=SUCCESS method=CelebsTest.celebs_News()[pri:1, instance:com.bet.test.CelebsTest@1341870] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="endReports()[pri:0, instance:com.bet.test.CelebsTest@1341870]" name="endReports" is-config="true" duration-ms="109" started-at="2020-08-29T11:01:37Z" finished-at="2020-08-29T11:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReports -->
+      </class> <!-- com.bet.test.CelebsTest -->
+    </test> <!-- Test7 -->
+    <test name="Test8" duration-ms="23012" started-at="2020-08-29T18:01:37Z" finished-at="2020-08-29T18:02:00Z">
+      <class name="com.bet.test.StyleTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.StyleTest@1ec2012]" name="setExtent" is-config="true" duration-ms="13" started-at="2020-08-29T11:01:37Z" finished-at="2020-08-29T11:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.StyleTest@1ec2012]" name="setup" is-config="true" duration-ms="14185" started-at="2020-08-29T11:01:37Z" finished-at="2020-08-29T11:01:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="style_Videos()[pri:1, instance:com.bet.test.StyleTest@1ec2012]" name="style_Videos" duration-ms="7561" started-at="2020-08-29T11:01:51Z" finished-at="2020-08-29T11:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- style_Videos -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.StyleTest@1ec2012]" name="quit" is-config="true" duration-ms="1126" started-at="2020-08-29T11:01:59Z" finished-at="2020-08-29T11:02:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=style_Videos status=SUCCESS method=StyleTest.style_Videos()[pri:1, instance:com.bet.test.StyleTest@1ec2012] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.StyleTest@1ec2012]" name="closeExtent" is-config="true" duration-ms="123" started-at="2020-08-29T11:02:00Z" finished-at="2020-08-29T11:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.StyleTest -->
+    </test> <!-- Test8 -->
+    <test name="Test9" duration-ms="34373" started-at="2020-08-29T18:02:00Z" finished-at="2020-08-29T18:02:34Z">
+      <class name="com.bet.test.BetPlusTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.BetPlusTest@fd02e5]" name="setExtent" is-config="true" duration-ms="8" started-at="2020-08-29T11:02:00Z" finished-at="2020-08-29T11:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.BetPlusTest@fd02e5]" name="setup" is-config="true" duration-ms="16377" started-at="2020-08-29T11:02:00Z" finished-at="2020-08-29T11:02:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="StreamExclusiveOriginals()[pri:1, instance:com.bet.test.BetPlusTest@fd02e5]" name="StreamExclusiveOriginals" duration-ms="16299" started-at="2020-08-29T11:02:16Z" finished-at="2020-08-29T11:02:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StreamExclusiveOriginals -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.BetPlusTest@fd02e5]" name="quit" is-config="true" duration-ms="1578" started-at="2020-08-29T11:02:33Z" finished-at="2020-08-29T11:02:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StreamExclusiveOriginals status=SUCCESS method=BetPlusTest.StreamExclusiveOriginals()[pri:1, instance:com.bet.test.BetPlusTest@fd02e5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="endReports()[pri:0, instance:com.bet.test.BetPlusTest@fd02e5]" name="endReports" is-config="true" duration-ms="109" started-at="2020-08-29T11:02:34Z" finished-at="2020-08-29T11:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReports -->
+      </class> <!-- com.bet.test.BetPlusTest -->
+    </test> <!-- Test9 -->
+    <test name="Test10" duration-ms="26419" started-at="2020-08-29T18:02:34Z" finished-at="2020-08-29T18:03:01Z">
+      <class name="com.bet.test.SearchBarTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.SearchBarTest@ac3a89]" name="setExtent" is-config="true" duration-ms="10" started-at="2020-08-29T11:02:34Z" finished-at="2020-08-29T11:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.SearchBarTest@ac3a89]" name="setup" is-config="true" duration-ms="14518" started-at="2020-08-29T11:02:34Z" finished-at="2020-08-29T11:02:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchPageDisplay()[pri:1, instance:com.bet.test.SearchBarTest@ac3a89]" name="searchPageDisplay" duration-ms="11612" started-at="2020-08-29T11:02:49Z" finished-at="2020-08-29T11:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPageDisplay -->
+        <test-method status="FAIL" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.SearchBarTest@ac3a89]" name="quit" is-config="true" duration-ms="0" started-at="2020-08-29T11:03:01Z" finished-at="2020-08-29T11:03:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchPageDisplay status=SUCCESS method=SearchBarTest.searchPageDisplay()[pri:1, instance:com.bet.test.SearchBarTest@ac3a89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.bet.test.SearchBarTest.quit(SearchBarTest.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="closeExtent()[pri:0, instance:com.bet.test.SearchBarTest@ac3a89]" name="closeExtent" is-config="true" duration-ms="271" started-at="2020-08-29T11:03:01Z" finished-at="2020-08-29T11:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtent -->
+      </class> <!-- com.bet.test.SearchBarTest -->
+    </test> <!-- Test10 -->
+    <test name="Test11" duration-ms="46269" started-at="2020-08-29T18:03:01Z" finished-at="2020-08-29T18:03:47Z">
+      <class name="com.bet.test.Covid19ReliefFundTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.bet.test.Covid19ReliefFundTest@1805618]" name="setExtent" is-config="true" duration-ms="18" started-at="2020-08-29T11:03:01Z" finished-at="2020-08-29T11:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.bet.test.Covid19ReliefFundTest@1805618]" name="setup" is-config="true" duration-ms="19604" started-at="2020-08-29T11:03:01Z" finished-at="2020-08-29T11:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://bet.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="covid19ReliefFund()[pri:0, instance:com.bet.test.Covid19ReliefFundTest@1805618]" name="covid19ReliefFund" duration-ms="24902" started-at="2020-08-29T11:03:21Z" finished-at="2020-08-29T11:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- covid19ReliefFund -->
+        <test-method status="PASS" signature="quit(org.testng.ITestResult)[pri:0, instance:com.bet.test.Covid19ReliefFundTest@1805618]" name="quit" is-config="true" duration-ms="1650" started-at="2020-08-29T11:03:45Z" finished-at="2020-08-29T11:03:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=covid19ReliefFund status=SUCCESS method=Covid19ReliefFundTest.covid19ReliefFund()[pri:0, instance:com.bet.test.Covid19ReliefFundTest@1805618] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="endReports()[pri:0, instance:com.bet.test.Covid19ReliefFundTest@1805618]" name="endReports" is-config="true" duration-ms="88" started-at="2020-08-29T11:03:47Z" finished-at="2020-08-29T11:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReports -->
+      </class> <!-- com.bet.test.Covid19ReliefFundTest -->
+    </test> <!-- Test11 -->
   </suite> <!-- Suite -->
 </testng-results>
